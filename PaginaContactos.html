@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>UYC GROUP</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+     <link rel="shortcut icon" href="icono1.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="EstiloContactos.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="navbar">
+            <div class="logo">
+                <a href="PaginaPrincipal.html"><img src="Logo2.2.png" alt="Logo"></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="PaginaPrincipal.html">INICIO</a></li>
+                    <li><a href="PaginaNosotros.html">NOSOTROS</a></li>
+                    <li><a href="PaginaServicios.html">SERVICIOS</a></li>
+                    <li><a href="PaginaContactos.html">CONTÁCTENOS</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <section class="container about">
+            <p class="about__paragraph"></p>
+        </section>
+
+    
+    <main>
+        <br><br><br>
+        <section class="container about">
+            <h2 class="subtitle">SERVICIO DE CONTACTOS</h2>
+            <p class="about__paragraph">Nuestro equipo de atención al cliente está disponible para responder sus preguntas y brindarle la asistencia que necesite. Puede contactarnos a través de nuestro servicio de contacto. Su satisfacción es nuestra prioridad, y estamos comprometidos a ofrecerle un servicio ágil y eficiente.<br><br> <br><br></p>
+            <h2>¡No dude en comunicarse con nosotros!</h2>
+            <div class="containerle">
+
+                <div class="contact-info">
+                    <div class="contact-box">
+                        <img class="imglina" src="bxl-gmail.svg" alt="Gmail Icon">
+                        <h3 class="conta">Gmail</h3>
+                        <p class="conta">infouycgroup@gmail.com</p>
+                    </div>
+                    <div class="contact-box">
+                        <img class="imglina" src="bxs-phone.svg" alt="Phone Icon">
+                        <h3 class="conta">Teléfono</h3>
+                        <p class="conta">+506 2208 3832</p>
+                    </div>
+                    <div class="contact-box">
+                        <img class="imglina" src="bx-map.svg" alt="Map Icon">
+                        <h3 class="conta">Dirección</h3>
+                        <p class="conta">Plaza Colonial Oficentro Faro</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </header> 
+
+    <script>
+        
+        const openFormBtn = document.getElementById('openFormBtn');
+        const formContainer = document.getElementById('formContainer');
+
+        openFormBtn.addEventListener('click', () => {
+            formContainer.style.display = formContainer.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+    <br><br>
+    <h2 class="subtitle">Nuestra ubicación</h2>
+            <div class="mapUbication">
+                
+                <div class="mapUbication__container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.8911565018243!2d-84.1358079!3d9.9288707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fdc738e0bc73%3A0xa68a8c6822f531fa!2sGrupo%20Ure%C3%B1a%20y%20Carballo%20s.a!5e1!3m2!1ses-419!2scr!4v1724796450390!5m2!1ses-419!2scr"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p class="mapUbication__address">Plaza Colonial Oficentro Faro</p>
+            </div>
+        </div>
+    </main>
+    <br><br><br><br>
+    <div class="contenedorA">
+        <h2 class="subtitle">SOLICITUD DE EMPLEO</h2>
+        <br><br><br>
+        <button id="openFormBtn">¿QUIERES FORMAR PARTE DE NUESTRA EMPRESA?</button>
+    
+        <div id="formContainer" style="display: none;"> <!-- Cambiado para que esté oculto por defecto -->
+            <form action="https://formspree.io/f/movarwnl" method="post" id="jobForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre"><br><br>
+    
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido"><br><br>
+    
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="Telefono" name="Número telefónico" placeholder="Digite su número"><br><br>
+    
+                <label for="titulo">Título:</label>
+                <div class="file-input-container">
+                    <input type="text" id="file-name" placeholder="Seleccione un archivo" readonly>
+                    <input type="file" id="titulo" name="titulo" accept=".pdf, .doc, .docx" required>
+                    <label for="titulo" class="upload-icon">📁</label> <!-- Icono de carpeta -->
+                </div>
+                <br><br>
+    
+                <label for="puesto">Puesto o cargo:</label>
+                <input type="text" id="puesto" name="puesto" placeholder="Puesto/cargo" required><br><br>
+    
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required><br><br>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    
+    
+    
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const openFormBtn = document.getElementById('openFormBtn');
+            const formContainer = document.getElementById('formContainer');
+            const jobForm = document.getElementById('jobForm');
+            const fileInput = document.getElementById('titulo'); // Campo de archivo
+            const fileNameDisplay = document.getElementById('file-name');
+    
+            openFormBtn.addEventListener('click', function() {
+                if (formContainer.style.display === 'none') {
+                    formContainer.style.display = 'block';
+                } else {
+                    formContainer.style.display = 'none';
+                }
+            });
+    
+            jobForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(this);
+    
+                fetch(this.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        alert('Formulario enviado con éxito');
+                        jobForm.reset();
+                        fileNameDisplay.textContent = '';
+                    } else {
+                        throw new Error('Error en el envío del formulario');
+                    }
+                }).catch(error => {
+                    alert('Error: ' + error.message);
+                });
+    
+            });
+    
+            fileInput.addEventListener('change', function(e) {
+                if (this.files && this.files[0]) {
+                    fileNameDisplay.value = this.files[0].name; // Muestra el nombre del archivo en la barra
+                } else {
+                    fileNameDisplay.value = '';
+                }
+            });
+        });
+    </script>
+    
+    
+    <br><br><br><br>
+    <footer class="footer">
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/uycgroup/?locale=es_LA" class="footer__icons"><img src="fe.png" class="footer__img"></a>
+                <a href="https://x.com/GroupUyc" class="footer__icons"><img src="ti.png" class="footer__img"></a>
+                <a href="PaginaAyuda.html" class="footer__icons"><img src="in.png" class="footer__img"></a>
+            </div>
+            <br><br>
+            <h3 class="footer__copyright"> &copy; Copyright UYC GROUP | 2024</h3>
+         </section>
+    </footer>
+
+    <script src="Chat.js"></script>
+
+</body>
+</html>
